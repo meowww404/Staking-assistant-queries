@@ -1,4 +1,4 @@
-WITH LatestReadingsData AS (     -- Combine the latest readings ratio for each date
+WITH LatestReadingsData AS (  -- Combine the latest readings ratio for each date
     SELECT
         toDate(timestamp) AS date,
         MAX(timestamp) AS exact_timestamp, 
